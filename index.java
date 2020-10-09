@@ -15,11 +15,29 @@ void draw() {
 // For example, “variable1 = variable1 + 2;”. 
 // Try different expressions and see what happens!
 
-  background(255);
-  stroke(0);
-  fill(175);
+	int r = 175, g = 175, b = 175;
 
+	background(r + 80, g + 80, b + 80);
+  	stroke(r - 175, g - 175, b - 175);
+  	fill(r, g, b);
 
+	int x = 30, y = 30;
+	int height = 50, width = 50;
   
- 
+	ellipse(x, y, height, width);
+
+	x += 100;
+
+	fill(r + 75, g, b);
+	ellipse(x, y, height, width);
+
+	y += 100;
+
+	ellipse(x, y, height, width);
+
+	x -= 100;
+
+	fill(r - 175, g + 25, b + 80);
+	ellipse(x, y, height, width);
+
 }
